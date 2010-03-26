@@ -1,0 +1,118 @@
+= Overview
+
+Allows for comments to be easily added to different models.
+
+= License
+
+Copyright (c) 2009 Brooke Kuhlmann of {Berserk Technologies}[http://www.berserktech.com].
+See the included LICENSE for more info.
+
+= History
+
+See the CHANGELOG file for more info.
+
+= Requirements
+
+1. {Ruby on Rails}[http://rubyonrails.org].
+
+= Installation
+
+Type the following from the command line to install:
+
+* *UNIX*: gem install commenter
+* *Windows*: gem install commenter
+
+Update your Gemfile to include the new gem:
+
+  gem "commenter"
+
+...or if still using the environment.rb file:
+
+  config.gem "commenter"
+
+= Usage
+
+Assuming you have created Post and Comment migrations and models, for example, then you can modify your models as follows:
+
+  class Post < ActiveRecord::Base
+    # Behaviors
+    acts_as_commentable
+  end
+
+  class Comment < ActiveRecord::Base
+    # Behaviors
+    acts_as_comment 
+  end
+
+That's it, your done!
+
+As an added bonus, you can customize your comment behavior. For example, lets say you want your comment label to reflect
+your post label (assuming you have "label" columns for both your Post and Comment models). You could then specify the auto_label method
+to be called before you save a comment.  Like so:
+
+  class Comment < ActiveRecord::Base
+    # Behaviors
+    acts_as_comment
+
+    # Callbacks
+    before_save :auto_label
+   end
+
+So if you created a post with a "My Awesome Post" label, then your comment label would end up as "RE: My Awesome Post" label in order
+to preserve comment context.
+
+What's that you say? You don't use "label" columns for your Post and Comment models?  No problem, you can
+change the default behavior as follows:
+
+  class Comment < ActiveRecord::Base
+    # Behaviors
+    acts_as_comment :commentable_label => "title", :comment_label => "title"
+
+    # Callbacks
+    before_save :auto_label
+  end
+
+Now you are using "title" instead "label" columns. To be clear, the "commentable_label" defines the Post model setting, while the "comment_label" defines the Comment model setting.
+
+= Migrations
+
+Based on the Post and Comment models mentioned above, the following migration code might be of interest:
+
+  # Post Migration
+  class CreatePosts < ActiveRecord::Migration
+    def self.up
+      create_table :posts do |t|
+        t.string :name
+        t.string :label
+        t.text :content
+        t.string :visibility
+        t.datetime :published_at
+        t.timestamps
+      end
+    end
+
+    def self.down
+      drop_table :posts
+    end
+  end
+
+  # Comment Migration
+  class CreateComments < ActiveRecord::Migration
+    def self.up
+      create_table :comments do |t|
+        t.integer :commentable_id
+        t.string :commentable_type
+        t.string :label
+        t.text :content
+        t.timestamps
+      end
+    end
+
+    def self.down
+      drop_table :comments
+    end
+  end
+
+= Contact/Feedback/Issues
+
+* {Brooke Kuhlmannn}[http://www.google.com/profiles/114291115422773881390]
