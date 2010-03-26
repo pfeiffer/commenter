@@ -4,12 +4,12 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "acts_as_commentable"
+    gem.name = "commenter"
     gem.summary = "Allows comments to be easily added to different models."
     gem.description = "Allows comments to be easily added to different models."
     gem.authors = ["Brooke Kuhlmann"]
     gem.email = "aeonscope@gmail.com"
-    gem.homepage = "http://github.com/aeonscope/acts_as_commentable"
+    gem.homepage = "http://github.com/aeonscope/commenter"
 		gem.required_ruby_version = ">= 1.8.6"
 		gem.add_dependency "rails", ">= 2.3.2"
 		gem.rdoc_options << "CHANGELOG.rdoc"
@@ -32,7 +32,6 @@ Spec::Rake::SpecTask.new(:rcov) do |spec|
   spec.rcov = true
 end
 
-
 task :default => :spec
 
 require 'rake/rdoctask'
@@ -45,8 +44,7 @@ Rake::RDocTask.new do |rdoc|
   end
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "acts_as_commentable #{version}"
+  rdoc.title = "commenter #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
