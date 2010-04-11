@@ -61,7 +61,7 @@ to be called before you save a comment.  Like so:
 So if you created a post with a "My Awesome Post" label, then your comment label would end up as "RE: My Awesome Post" label in order
 to preserve comment context.
 
-What's that you say? You don't use "label" columns for your Post and Comment models?  No problem, you can
+What's that you say? You don't use "label" columns for your Post and Comment models? No problem, you can
 change the default behavior as follows:
 
   class Comment < ActiveRecord::Base
@@ -85,7 +85,6 @@ Based on the Post and Comment models mentioned above, the following migration co
         t.string :name
         t.string :label
         t.text :content
-        t.string :visibility
         t.datetime :published_at
         t.timestamps
       end
@@ -106,6 +105,7 @@ Based on the Post and Comment models mentioned above, the following migration co
         t.text :content
         t.timestamps
       end
+			add_index :comments, [:commentable_id, :commentable_type]
     end
 
     def self.down
