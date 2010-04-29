@@ -4,7 +4,7 @@ Allows for comments to be easily added to different models.
 
 = License
 
-Copyright (c) 2009 Brooke Kuhlmann of {Berserk Technologies}[http://www.berserktech.com].
+Copyright (c) 2009-2010 {Brooke Kuhlmann}[http://www.aeonscope.net].
 See the included LICENSE for more info.
 
 = History
