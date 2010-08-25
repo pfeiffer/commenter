@@ -10,8 +10,8 @@ begin
     gem.authors = ["Brooke Kuhlmann"]
     gem.email = "aeonscope@gmail.com"
     gem.homepage = "http://github.com/aeonscope/commenter"
-		gem.required_ruby_version = ">= 1.8.6"
-		gem.add_dependency "rails", ">= 2.3.2"
+		gem.required_ruby_version = "~> 1.8.6"
+		gem.add_dependency "rails", "~> 2.3.0"
 		gem.rdoc_options << "CHANGELOG.rdoc"
 		gem.files = FileList["[A-Z]*", "{bin,lib,generators,rails_generators,spec}/**/*"]
   end

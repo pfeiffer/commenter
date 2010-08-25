@@ -1,3 +1,7 @@
+= v0.x.x (master)
+
+* Added soft requirements for Ruby 1.8.6 and Rails 2.3.0.
+
 = v0.1.0
 
 * Initial version.
