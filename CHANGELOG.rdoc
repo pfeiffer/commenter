@@ -1,6 +1,6 @@
-= v0.x.x (master)
+= v0.2.0
 
-* Added soft requirements for Ruby 1.8.6 and Rails 2.3.0.
+* Added soft requirements for Ruby 1.8.6 and Rails 2.3.8.
 
 = v0.1.0
 
