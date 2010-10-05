@@ -19,14 +19,15 @@ See the CHANGELOG file for more info.
 
 Type the following from the command line to install:
 
-* *UNIX*: gem install commenter
-* *Windows*: gem install commenter
+  gem install commenter
 
-Update your Gemfile to include the new gem:
+= Configuration
+
+Add the following to your Gemfile:
 
   gem "commenter"
 
-...or if still using the environment.rb file:
+Add the following to your application.rb:
 
   config.gem "commenter"
 

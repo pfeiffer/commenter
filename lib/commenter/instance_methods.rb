@@ -3,7 +3,7 @@ module ActsAsComment
 	  # Before saving, store the comment label as as reply of the commentable label. This is especially useful
 	  # when representing context origin (i.e. a syndicated comment feed).
 	  def auto_label
-		  # Set up defaults and custom options (if any).
+		  # Set defaults and custom options (if any).
 			options = self.class.acts_as_comment_options || {}
 			options.reverse_merge! :commentable_label => "label", :comment_label => "label"
 			# Default the comment label to the commentable label.

@@ -14,4 +14,4 @@ module ActsAsCommentable
   end
 end
 
-ActiveRecord::Base.class_eval { include ActsAsComment, ActsAsCommentable }
+ActiveRecord::Base.class_eval {include ActsAsComment, ActsAsCommentable}

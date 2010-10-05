@@ -1,3 +1,7 @@
+= v1.0.0
+
+* Upgraded to Ruby 1.8.7 and Ruby on Rails 3.0.0.
+
 = v0.2.0
 
 * Added soft requirements for Ruby 1.8.6 and Rails 2.3.8.

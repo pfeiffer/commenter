@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{commenter}
-  s.version = "0.2.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brooke Kuhlmann"]
-  s.date = %q{2010-09-07}
+  s.date = %q{2010-10-04}
   s.description = %q{Allows comments to be easily added to different models.}
   s.email = %q{aeonscope@gmail.com}
   s.extra_rdoc_files = [
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/aeonscope/commenter}
   s.rdoc_options = ["--charset=UTF-8", "CHANGELOG.rdoc"]
   s.require_paths = ["lib"]
-  s.required_ruby_version = Gem::Requirement.new("~> 1.8.6")
+  s.required_ruby_version = Gem::Requirement.new("~> 1.8.7")
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Allows comments to be easily added to different models.}
   s.test_files = [
@@ -44,12 +44,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rails>, ["~> 2.3.8"])
+      s.add_runtime_dependency(%q<rails>, ["~> 3.0.0"])
     else
-      s.add_dependency(%q<rails>, ["~> 2.3.8"])
+      s.add_dependency(%q<rails>, ["~> 3.0.0"])
     end
   else
-    s.add_dependency(%q<rails>, ["~> 2.3.8"])
+    s.add_dependency(%q<rails>, ["~> 3.0.0"])
   end
 end
 
