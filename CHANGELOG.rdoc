@@ -1,3 +1,7 @@
+= vx.x.x (master)
+
+* Updated README to better support Rails 3.0.0.
+
 = v1.0.0
 
 * Upgraded to Ruby 1.8.7 and Ruby on Rails 3.0.0.

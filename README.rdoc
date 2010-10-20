@@ -27,10 +27,6 @@ Add the following to your Gemfile:
 
   gem "commenter"
 
-Add the following to your application.rb:
-
-  config.gem "commenter"
-
 = Usage
 
 Assuming you have created Post and Comment migrations and models, for example, then you can modify your models as follows:
