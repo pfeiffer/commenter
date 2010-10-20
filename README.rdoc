@@ -102,7 +102,7 @@ Based on the Post and Comment models mentioned above, the following migration co
         t.text :content
         t.timestamps
       end
-			add_index :comments, [:commentable_id, :commentable_type]
+      add_index :comments, [:commentable_id, :commentable_type]
     end
 
     def self.down
