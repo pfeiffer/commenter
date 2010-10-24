@@ -8,7 +8,7 @@ begin
     gem.summary = "Allows comments to be easily added to different models."
     gem.description = "Allows comments to be easily added to different models."
     gem.authors = ["Brooke Kuhlmann"]
-    gem.email = "aeonscope@gmail.com"
+    gem.email = "brooke@redalchemist.com"
     gem.homepage = "http://github.com/aeonscope/commenter"
 		gem.required_ruby_version = "~> 1.8.7"
 		gem.add_dependency "rails", "~> 3.0.0"
