@@ -1,5 +1,6 @@
 = vx.x.x (master)
 
+* Switched to Bundler for building/packing of gem.
 * Updated README to better support Rails 3.0.0.
 
 = v1.0.0
