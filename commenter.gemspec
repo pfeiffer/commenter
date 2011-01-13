@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Brooke Kuhlmann"]
   s.email       = ["brooke@redalchemist.com"]
   s.homepage    = "http://www.redalchemist.com"
-  s.summary     = "Allows comments to be easily added to different models."
-  s.description = "Allows comments to be easily added to different models."
+  s.summary     = "Enhances ActiveRecord with polymorphic commenting."
+  s.description = "Enhances ActiveRecord with polymorphic commenting where any record can be made 'commentable'."
 
   s.required_ruby_version = "~> 1.8.7"
   s.rdoc_options << "CHANGELOG.rdoc"
