@@ -2,26 +2,20 @@
 
 Allows for comments to be easily added to different models.
 
-= License
+= Features
 
-Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
-See the included LICENSE for more info.
-
-= History
-
-See the CHANGELOG file for more info.
+* Enhances models with commenting support.
+* Adds a polymorphic comment model.
 
 = Requirements
 
 1. {Ruby on Rails}[http://rubyonrails.org].
 
-= Installation
+= Setup
 
 Type the following from the command line to install:
 
   gem install commenter
-
-= Configuration
 
 Add the following to your Gemfile:
 
@@ -112,6 +106,16 @@ Based on the Post and Comment models mentioned above, the following migration co
     end
   end
 
-= Contact/Feedback/Issues
+= Author
 
-* {Red Alchemist}[http://www.redalchemist.com]
+{Red Alchemist}[http://www.redalchemist.com]
+
+= License
+
+Copyright (c) 2010 {Red Alchemist}[http://www.redalchemist.com].
+Read the LICENSE for details.
+
+= History
+
+Read the CHANGELOG for details.
+
