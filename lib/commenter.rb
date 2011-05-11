@@ -1,17 +1,18 @@
-require File.join(File.dirname(__FILE__), "commenter", "class_methods.rb")
-require File.join(File.dirname(__FILE__), "commenter", "instance_methods.rb")
+# Dependencies
+require File.join File.dirname(__FILE__), "commenter", "active_record", "commentable", "class_methods.rb"
+require File.join File.dirname(__FILE__), "commenter", "active_record", "comment", "class_methods.rb"
+require File.join File.dirname(__FILE__), "commenter", "active_record", "comment", "instance_methods.rb"
 
-module ActsAsComment
-  def self.included base
-    base.extend ClassMethods
-  end
-  include InstanceMethods
+# Namespace
+module Commenter
+  # Placeholder.
 end
 
-module ActsAsCommentable
-  def self.included base
-    base.extend ClassMethods
+# Rails Enhancements
+if defined? Rails
+  # Model
+  if defined? ActiveRecord
+    ActiveRecord::Base.send :include, Commenter::ActiveRecord::Commentable
+    ActiveRecord::Base.send :include, Commenter::ActiveRecord::Comment
   end
 end
-
-ActiveRecord::Base.class_eval {include ActsAsComment, ActsAsCommentable}

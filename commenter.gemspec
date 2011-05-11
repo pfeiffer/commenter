@@ -12,7 +12,6 @@ Gem::Specification.new do |s|
   s.summary     = "Enhances ActiveRecord with polymorphic commenting."
   s.description = "Enhances ActiveRecord with polymorphic commenting where any record can be made 'commentable'."
 
-  s.required_ruby_version = "~> 1.8.7"
   s.rdoc_options << "CHANGELOG.rdoc"
   s.add_dependency "rails", "~> 3.0.0"
   s.add_development_dependency "rspec"

@@ -1,7 +1,9 @@
-= vx.x.x (master)
+= v1.1.0
 
 * Switched to Bundler for building/packing of gem.
 * Updated README to better support Rails 3.0.0.
+* Removed Ruby version requirements.
+* Added graceful Rails support and detection.
 
 = v1.0.0
 
