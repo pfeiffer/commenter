@@ -27,12 +27,12 @@ Assuming you have created Post and Comment migrations and models, for example, t
 
   class Post < ActiveRecord::Base
     # Behaviors
-    acts_as_commentable
+    is_commentable
   end
 
   class Comment < ActiveRecord::Base
     # Behaviors
-    acts_as_comment 
+    is_comment 
   end
 
 That's it, your done!
@@ -43,7 +43,7 @@ to be called before you save a comment.  Like so:
 
   class Comment < ActiveRecord::Base
     # Behaviors
-    acts_as_comment
+    is_comment
 
     # Callbacks
     before_save :auto_label
@@ -57,7 +57,7 @@ change the default behavior as follows:
 
   class Comment < ActiveRecord::Base
     # Behaviors
-    acts_as_comment :commentable_label => "title", :comment_label => "title"
+    is_comment :commentable_label => "title", :comment_label => "title"
 
     # Callbacks
     before_save :auto_label
