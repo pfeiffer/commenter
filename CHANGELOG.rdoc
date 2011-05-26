@@ -1,3 +1,7 @@
+= vx.x.x (master)
+
+* Updated the is_commentable method so that the default settings can be customized.
+
 = v1.1.0
 
 * Switched to Bundler for building/packing of gem.

@@ -6,8 +6,9 @@ module Commenter
       end      
       
       module ClassMethods
-        def is_commentable
-          has_many :comments, :as => :commentable, :dependent => :destroy, :order => :created_at
+        def is_commentable options = {}
+          options.reverse_merge! :as => :commentable, :dependent => :destroy, :order => :created_at 
+          has_many :comments, options
         end
       end
     end
