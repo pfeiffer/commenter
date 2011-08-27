@@ -3,11 +3,6 @@ require File.join File.dirname(__FILE__), "commenter", "active_record", "comment
 require File.join File.dirname(__FILE__), "commenter", "active_record", "comment", "class_methods.rb"
 require File.join File.dirname(__FILE__), "commenter", "active_record", "comment", "instance_methods.rb"
 
-# Namespace
-module Commenter
-  # Placeholder.
-end
-
 # Rails Enhancements
 if defined? Rails
   # Model
