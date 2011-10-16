@@ -1,6 +1,9 @@
-= vx.x.x (master)
+= v1.2.0
 
 * Updated the is_commentable method so that the default settings can be customized.
+* Removed the unused namespace placeholder.
+* Updated the RDoc.
+* Moved the default options for the comment object from the instance methods to the class methods.
 
 = v1.1.0
 

@@ -20,6 +20,9 @@ module Commenter
           
           # Associations
     			belongs_to :commentable, :polymorphic => true
+    			
+    			# Callbacks
+    			before_save :auto_label
         end
       end
     end
