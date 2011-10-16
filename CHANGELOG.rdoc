@@ -4,6 +4,7 @@
 * Removed the unused namespace placeholder.
 * Updated the RDoc.
 * Moved the default options for the comment object from the instance methods to the class methods.
+* Made the auto_label method a required  before_save callback (originally, it was optional).
 
 = v1.1.0
 
