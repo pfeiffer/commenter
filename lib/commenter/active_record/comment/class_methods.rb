@@ -6,7 +6,7 @@ module Commenter
       end      
       
       module ClassMethods
-        # Allows one to customize the default settings.
+        # Defines comment behavior.
         # ==== Options
       	# * +commentable_label+ - The commentable (parent object) label method. Optional. Defaults to: label.
       	# * +comment_label+ - The comment label method. Optional. Defaults to: label.
