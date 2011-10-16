@@ -4,9 +4,9 @@ Allows for comments to be easily added to different models.
 
 = Features
 
-* Adds a polymorphic comment model.
-* Adds the ability to turn any model into a commentable resource.
-* Adds customizable options for default comment behavior.
+* Provides a polymorphic comment model.
+* Provides the ability to turn any model into a commentable resource.
+* Provides customizable options for default comment behavior.
 
 = Requirements
 
@@ -33,8 +33,6 @@ Assuming you have created Post and Comment migrations and models, for example, t
   class Comment < ActiveRecord::Base
     is_comment 
   end
-
-That's it, your done!
 
 As an added bonus, each comment's label will default to the parent label prefixed with "RE:". For example:
 
