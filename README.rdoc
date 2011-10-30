@@ -43,7 +43,7 @@ Assumptions are made that both post and comment have "label" attributes. Should 
 for Post and Comment models, then it is possible to customize. For example:
 
   class Comment < ActiveRecord::Base
-    is_comment :commentable_label => "title", :comment_label => "title"
+    is_comment commentable_label: "title", comment_label: "title"
   end
 
 Now you are using "title" instead "label" columns. To be clear, the "commentable_label" defines the Post model
@@ -91,9 +91,13 @@ code would look like:
     end
   end
 
-= Author
+= Company
 
 {Red Alchemist}[http://www.redalchemist.com]
+
+= Author
+
+{Brooke Kuhlmann}[http://www.redalchemist.com]
 
 = License
 

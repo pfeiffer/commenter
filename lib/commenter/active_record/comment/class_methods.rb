@@ -14,12 +14,12 @@ module Commenter
           self.send :include, InstanceMethods
 
           # Default Options
-    			options.reverse_merge! :commentable_label => "label", :comment_label => "label"
+    			options.reverse_merge! commentable_label: "label", comment_label: "label"
           write_inheritable_attribute :commenter_options, options
           class_inheritable_reader :commenter_options
           
           # Associations
-    			belongs_to :commentable, :polymorphic => true
+    			belongs_to :commentable, polymorphic: true
     			
     			# Callbacks
     			before_save :auto_label
