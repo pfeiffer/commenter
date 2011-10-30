@@ -10,7 +10,7 @@ module Commenter
 
     			# Default the comment label to the commentable label.
     	    if self.send(options[:comment_label]).blank? && commentable && commentable.respond_to?(options[:commentable_label])
-    				self.instance_eval("self.#{options[:comment_label]} = 'RE: ' + commentable.#{options[:commentable_label]}")
+    				self.instance_eval "self.#{options[:comment_label]} = 'RE: ' + commentable.#{options[:commentable_label]}"
     			end
     	  end
       end

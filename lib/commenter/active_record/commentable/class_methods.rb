@@ -15,7 +15,7 @@ module Commenter
         # * +order+ - Optional. Defines sorting order. Default: :created_at
         def is_commentable options = {}
           # Default Options
-          options.reverse_merge! as: :commentable, dependent: :destroy, order: :created_at 
+          options.reverse_merge! as: :commentable, dependent: :destroy, order: :created_at
           
           # Associations
           has_many :comments, options

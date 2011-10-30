@@ -1,3 +1,8 @@
+= v2.0.0
+
+* Upgraded to Ruby 1.9 and converted to Ruby 1.9 syntax.
+* Applied new Gemsmith specs.
+
 = v1.2.0
 
 * Updated the is_commentable method so that the default settings can be customized.

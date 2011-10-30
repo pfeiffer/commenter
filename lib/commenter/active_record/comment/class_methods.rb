@@ -8,8 +8,8 @@ module Commenter
       module ClassMethods
         # Defines comment behavior.
         # ==== Options
-      	# * +commentable_label+ - The commentable (parent object) label method. Optional. Defaults to: label.
-      	# * +comment_label+ - The comment label method. Optional. Defaults to: label.
+      	# * +commentable_label+ - Optional. The commentable (parent object) label method. Optional. Defaults to: label.
+      	# * +comment_label+ - Optional. The comment label method. Optional. Defaults to: label.
         def is_comment options = {}
           self.send :include, InstanceMethods
 
