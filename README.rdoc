@@ -10,7 +10,8 @@ Allows for comments to be easily added to different models.
 
 = Requirements
 
-1. {Ruby on Rails}[http://rubyonrails.org].
+1. {Ruby 1.9.x}[http://www.ruby-lang.org]
+2. {Ruby on Rails}[http://rubyonrails.org].
 
 = Setup
 
