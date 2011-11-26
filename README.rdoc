@@ -2,6 +2,10 @@
 
 Allows for comments to be easily added to different models.
 
+*WARNING:* This gem does not promote best practices of database integrity due to single table inheritance (STI). The solution is
+to add a table for each type of comment in the system and move away from a single table. This gem will eventually be deleted so
+know the consequences if you choose to go down this route.
+
 = Features
 
 * Provides a polymorphic comment model.
