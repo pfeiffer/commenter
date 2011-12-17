@@ -96,13 +96,13 @@ code would look like:
     end
   end
 
-= Company
+= Contributions
 
-{Red Alchemist}[http://www.redalchemist.com]
+Please log all feedback/issues via {GitHub Issues}[https://github.com/bkuhlmann/commenter/issues]. Thanks.
 
-= Author
+= Credits
 
-{Brooke Kuhlmann}[http://www.redalchemist.com]
+Developed by {Brooke Kuhlmann}[http://www.redalchemist.com] at {Red Alchemist}[http://www.redalchemist.com]
 
 = License
 
