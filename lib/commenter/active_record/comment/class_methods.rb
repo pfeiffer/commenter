@@ -15,8 +15,8 @@ module Commenter
 
           # Default Options
     			options.reverse_merge! commentable_label: "label", comment_label: "label"
-          write_inheritable_attribute :commenter_options, options
-          class_inheritable_reader :commenter_options
+          class_attribute :commenter_options
+          self.commenter_options = options
           
           # Associations
     			belongs_to :commentable, polymorphic: true

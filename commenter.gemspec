@@ -16,8 +16,9 @@ Gem::Specification.new do |s|
 
   s.rdoc_options << "CHANGELOG.rdoc"
   s.required_ruby_version = "~> 1.9.0"
-  s.add_dependency "rails", "~> 3.0.0"
-  s.add_development_dependency "rspec"
+  s.add_dependency "rails", "~> 3.1.0"
+  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec-rails"
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {spec,features}/*`.split("\n")
