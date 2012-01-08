@@ -1,5 +1,7 @@
 = Overview
 
+{<img src="https://secure.travis-ci.org/bkuhlmann/commenter.png" />}[http://travis-ci.org/bkuhlmann/commenter]
+
 Allows for comments to be easily added to different models.
 
 *WARNING:* This gem does not promote best practices of database integrity due to single table inheritance (STI). The solution is
