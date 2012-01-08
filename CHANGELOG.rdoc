@@ -1,3 +1,15 @@
+= V2.1.0
+
+* Added Ruby 1.9.x requirement to README.
+* Upgraded to Rails 3.1.
+* Switched to sqlite3 in-memory database for testing.
+* Replaced the class_inheritable_reader and write_inheritable_attribute methods with the class_attribute method.
+* Removed RubyGems requirement.
+* Added the spec/tmp dir to .gitignore.
+* Added Travis CI support.
+* Applied Gemsmith updates to README.
+* Added STI warning to README.
+
 = v2.0.0
 
 * Upgraded to Ruby 1.9 and converted to Ruby 1.9 syntax.
